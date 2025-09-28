@@ -33,5 +33,5 @@ MOODify is a **real-time emotion-driven UI app** that uses your webcam to detect
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/moodify.git
-cd moodify
+git clone https://github.com/yourusername/moodify-app.git
+cd moodify-app
