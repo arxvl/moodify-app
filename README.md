@@ -17,7 +17,7 @@ MOODify is a **real-time emotion-driven UI app** that uses your webcam to detect
 - Helps you reflect on your emotional well-being.  
 
 ### Mood-Based Recommendations  
-- Offers *suggestions** depending on your mood.
+- Offers *suggestions* depending on your mood.
   
 ---
 
