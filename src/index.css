@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  /*For background*/
+  --color-pale-yellow-200: 0.97 0.02 41; 
+  --color-pale-blue-200: 0.90 0.04 240;
+  --color-pale-violet-200: 0.90 0.02 300;
+
+  /*For text color*/
+  --color-dark-yellow-200: 0.70 0.15 55; 
+  --color-dark-blue-200: 0.50 0.15 240;
+  --color-dark-violet-200: 0.50 0.15 310;
+}
+
+@layer utilities {
+  .background-color {
+    background-color: oklch(var(--color-pale-yellow-200));
+  }
+  .background-chart {
+    background-color: oklch(var(--color-pale-blue-200));
+  }
+  .background-tips {
+    background-color: oklch(var(--color-pale-violet-200));
+  }
+}
+
+.font-color-status {
+  color: oklch(var(--color-dark-yellow-200));
+}
+
+.font-color-chart {
+  color: oklch(var(--color-dark-blue-200));
+}
+
+.font-color-tips {
+  color: oklch(var(--color-dark-violet-200));
+}
+
+.my-button {
+    background-color: #5D688A;
+    color: #FFDBB6;
+  }
+
+/*Fonts*/
+@font-face {
+  font-family: "Slackey";
+  src: url("../src/assets/fonts/Slackey-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sour Gummy";
+  src: url("../src/assets/fonts/SourGummy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-slackey {
+  font-family: "Slackey", cursive;
+}
+
+.font-sour-gummy {
+  font-family: "Sour Gummy", cursive;
+}
+
+/*App Title/Logo */
+svg {
+  position: absolute; 
+  top: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  margin: 0; 
+  height: 60px; 
+  width: auto; 
+}
+
+.path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 100%;
+  animation: dash 3.5s linear;
+}
+
+.path:nth-child(10) {
+  animation-delay: -2s;
+}
+.path:nth-child(9) {
+  animation-delay: -1.75s;
+}
+.path:nth-child(8) {
+  animation-delay: -1.5s;
+}
+.path:nth-child(7) {
+  animation-delay: -1.5s;
+}
+.path:nth-child(6) {
+  animation-delay: -1.25s;
+}
+.path:nth-child(5) {
+  animation-delay: -1s;
+}
+.path:nth-child(4) {
+  animation-delay: -0.75s;
+}
+.path:nth-child(3) {
+  animation-delay: -0.5s;
+}
+.path:nth-child(2) {
+  animation-delay: -0.25s;
+}
+
+@keyframes dash {
+  0%,
+  50% {
+    stroke-dashoffset: 100%;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
